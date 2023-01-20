@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,56 +8,169 @@
     <title>Gitonline</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header>
+
+    <!-------------HEADER - NAV BAR TOP -------------->
+
+    <header id="header">
         <nav id="nav-top">
             <div id="nav-logo">
-                <img id="logo" src="./img/Giîte d'Orléans-logo.svg" alt="logo Gitonline" height="60px">
+                <img id="logo" src="./img/Giîte d'Orléans-logo.svg" alt="logo Gitonline" height="45px">
                 <span id="logo-text">Gitonline</span>
             </div>
             <div id="nav-connexion">
-                <img id="picto-global" src="./img/GlobalOutlined.svg" alt="Choix de langue">
-                <img id="picto-customer" src="./img/Customer.svg" alt="Profil utilisateur" >
-                <button id="btn-connection" type="button">Connexion</button>
+                <img id="picto-global" src="./img/GlobalOutlined.svg" alt="Choix de langue" height="30px">
+                <img id="picto-customer" src="./img/Customer.svg" alt="Profil utilisateur">
+                <button id="btn-connexion" type="button">Connexion</button>
                 <button id="btn-contact" type="button">Contact</button>
             </div>
         </nav>
     </header>
+
+    <!-------------MAIN - HERO -------------->
+
     <main>
         <div id="hero">
             <span>Un moment inoubliable en famille</span>
             <h1>Les meilleurs gîtes de la région Centre</h1>
             <div id="search-bar-descktop">
                 <div id="type-gite">
-                    <span>Type de gîte</span>
-                    <span>Forêt à proximité...</span>
+                    <span class="color-black-search">Type de gîte</span>
+                    <span class="color-gray-search">Forêt à proximité...</span>
                 </div>
                 <div id="date-choise-in">
-                    <span>Date d'arrivé</span>
-                    <span>Quand ?</span>
+                    <span class="color-black-search">Date d'arrivé</span>
+                    <span class="color-gray-search">Quand ?</span>
                 </div>
                 <div id="date-choise-out">
-                    <span>Date de départ</span>
-                    <span>Quand ?</span>
+                    <span class="color-black-search">Date de départ</span>
+                    <span class="color-gray-search">Quand ?</span>
                 </div>
                 <div id="nb-char">
-                    <span>Voyageurs ?</span>
-                    <span>Qui ?</span>
+                    <span class="color-black-search">Voyageurs ?</span>
+                    <span class="color-gray-search">Qui ?</span>
                 </div>
                 <div id="picto-search">
                     <img src="./img/SearchOutlined.svg" alt="rechercher">
                 </div>
             </div>
             <div id="search-bar-mobile">
-                <button type="button">
-                    <div>
-                        <img id="picto-search-mobile" src="./img/SearchOutlined.svg" alt="rechercher" id="picto-search-mobile" height="16px">
-                        <span>Rechercher un gîte</span>
-                    </div>
+                <button id="btn-search-mobile" type="button">
+                    <img id="picto-search-mobile" src="./img/SearchOutlined.svg" alt="rechercher"
+                        id="picto-search-mobile" height="16px">Rechercher un gîte
                 </button>
             </div>
         </div>
     </main>
-    
+
+    <!-------------SECTION 1 -------------->
+
+    <section id="section-1">
+        <h2 class="title-section-h2">Coup de coeur du moment</h2>
+        <hr class="hr-section-h2">
+        <div class="article-card-shadow">
+            <div id="picture-article-1" class="picture-top-card">
+                <img class="card-heart" src="./img/HeartOutlined.svg" alt="coeur">
+            </div>
+            <div class="card-description-section-1">
+                <img class="picto-share-card" src="./img/box-sticky-reserver1.svg" alt="partager le lien">
+                <h3 class="title-card">Chalet style montagne</h3>
+                <span class="card-price">192€</span>
+                <span class="card-night">par nuit</span>
+                <div class="card-like">
+                    <img id="star" src="./img/picto-etoile.svg" alt="Etoile" height="15px">
+                    <span class="note-star">4 +</span>
+                    <a class="card-coms" href="#">55 commentaires</a>
+                </div>
+                <p class="card-text-description">Le Lorem Ipsum est simplement du faux texte employé dans la composition
+                    et
+                    la mise en page avant impression.</p>
+            </div>
+        </div>
+        <div class="article-card-shadow">
+            <div id="picture-article-2" class="picture-top-card">
+                <img class="card-heart" src="./img/HeartOutlined.svg" alt="coeur">
+            </div>
+            <div class="card-description-section-1">
+                <img class="picto-share-card" src="./img/box-sticky-reserver1.svg" alt="partager le lien">
+                <h3 class="title-card">Chalet style montagne</h3>
+                <span class="card-price">192€</span>
+                <span class="card-night">par nuit</span>
+                <div class="card-like">
+                    <img id="star" src="./img/picto-etoile.svg" alt="Etoile" height="15px">
+                    <span class="note-star">4 +</span>
+                    <a class="card-coms" href="#">55 commentaires</a>
+                </div>
+                <p class="card-text-description">Le Lorem Ipsum est simplement du faux texte employé dans la composition
+                    et
+                    la mise en page avant impression.</p>
+            </div>
+        </div>
+        <div class="article-card-shadow">
+            <div id="picture-article-3" class="picture-top-card">
+                <img class="card-heart" src="./img/HeartOutlined.svg" alt="coeur">
+            </div>
+            <div class="card-description-section-1">
+                <img class="picto-share-card" src="./img/box-sticky-reserver1.svg" alt="partager le lien">
+                <h3 class="title-card">Chalet style montagne</h3>
+                <span class="card-price">192€</span>
+                <span class="card-night">par nuit</span>
+                <div class="card-like">
+                    <img id="star" src="./img/picto-etoile.svg" alt="Etoile" height="15px">
+                    <span class="note-star">4 +</span>
+                    <a class="card-coms" href="#">55 commentaires</a>
+                </div>
+                <p class="card-text-description">Le Lorem Ipsum est simplement du faux texte employé dans la composition
+                    et
+                    la mise en page avant impression.</p>
+            </div>
+        </div>
+        <button class="btn-all-offers" type="button">Voir toutes les offres</button>
+    </section>
+
+    <!-------------SECTION 2 -------------->
+
+    <section id="section-2">
+        <h2 class="title-section-h2">Offre de dernière minutes</h2>
+        <hr class="hr-section-h2">
+        <div class="article-card-border">
+            <div id="picture-article-1-section-2" class="picture-top-card-section-2">
+                <div class="tag-alerte">Reste seulement 2 jours</div>
+            </div>
+            <div class="card-description-section-2">
+                <h3 class="title-card">Chalet style montagne</h3>
+                <h4 class="sub-title-card">Le Lorem Ipsum est simplement</h4>
+                <span class="card-price">192€</span>
+                <span class="card-night">par nuit</span>
+                <span class="more-info-card-right">En savoir plus...</span>
+            </div>
+        <div class="article-card-border">
+            <div id="picture-article-2-section-2" class="picture-top-card-section-2">
+                <div class="tag-alerte">Reste seulement 2 jours</div>
+            </div>
+            <div class="card-description-section-2">
+                <h3 class="title-card">Chalet style montagne</h3>
+                <h4 class="sub-title-card">Le Lorem Ipsum est simplement</h4>
+                <span class="card-price">192€</span>
+                <span class="card-night">par nuit</span>
+                <span class="more-info-card-right">En savoir plus...</span>
+            </div>
+        <div class="article-card-border">
+            <div id="picture-article-3-section-2" class="picture-top-card-section-2">
+                <div class="tag-alerte">Reste seulement 2 jours</div>
+            </div>
+            <div class="card-description-section-2">
+                <h3 class="title-card">Chalet style montagne</h3>
+                <h4 class="sub-title-card">Le Lorem Ipsum est simplement</h4>
+                <span class="card-price">192€</span>
+                <span class="card-night">par nuit</span>
+                <span class="more-info-card-right">En savoir plus...</span>
+            </div>
+    </section>
+
+    <!-------------SECTION 3 -------------->
+
 </body>
+
 </html>

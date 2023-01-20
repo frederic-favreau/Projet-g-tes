@@ -1,0 +1,335 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row-limit-size {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 390px) {
+
+    /* HEADER MOBILE - NAV BAR */
+    #header {
+        /* max-width: 390px; */
+        width: 90%;
+        margin: 10px auto 0 auto;
+    }
+
+    #nav-top {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    #nav-logo {
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+    }
+
+    #logo-text {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    #nav-connexion {
+        display: flex;
+        align-items: baseline;
+    }
+
+    #picto-global {
+        margin: auto 10px auto 0;
+    }
+
+    #picto-customer {
+        margin: auto;
+    }
+
+    #btn-connexion,
+    #btn-contact {
+        display: none;
+    }
+
+    /* HERO MOBILE */
+
+    #hero {
+        background: url(./img/pexels-travelers-way-13851928.jpg) red;
+        background-size: cover;
+        background-position: center;
+        height: 85vh;
+        width: 100%;
+        margin: auto auto 40px auto;
+        color: #fff;
+        border-radius: 20px;
+        padding: 70px 30px;
+        text-align: center;
+        position: relative;
+    }
+
+    #hero span {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-transform: capitalize;
+    }
+
+    #hero h1 {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin: 40px 0;
+    }
+
+    #search-bar-descktop {
+        display: none;
+    }
+
+    #btn-search-mobile {
+        color: #000;
+        background-color: #fff;
+        border-radius: 50px;
+        height: 48px;
+        width: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        font-weight: 600;
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 20vh;
+        left: 50%;
+        margin-left: -110px;
+    }
+
+    #picto-search-mobile {
+        margin-right: 10px;
+    }
+
+    /* SECTION 1 MOBILE */
+
+    #section-1 {
+        width: 90%;
+        margin: auto auto 20px auto;
+    }
+
+    .hr-section-h2 {
+        width: 98%;
+    }
+
+    .article-card-shadow {
+        height: 60vh;
+        min-height: 370px;
+        width: 100%;
+        margin: 20px auto 40px auto;
+        border-radius: 5px 5px 0 0;
+        position: relative;
+        overflow: visible;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    #picture-article-1 {
+        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    }
+
+    #picture-article-2 {
+        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    }
+
+    #picture-article-3 {
+        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    }
+
+    .picture-top-card {
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+        height: 50%;
+        position: relative;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-heart {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .card-description-section-1 {
+        height: 50%;
+        padding: 10px 20px 10px 20px;
+        overflow: auto;
+    }
+
+    .picto-share-card {
+        position: absolute;
+        right: 10px;
+        top: 55%;
+    }
+
+    .title-card {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    .card-price {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .card-like {
+        margin: 10px auto 15px auto;
+    }
+
+    .note-star {
+        margin-right: 15px;
+    }
+
+    .card-text-description {
+        text-justify: auto;
+        overflow-wrap: break-word;
+        font-size: 0.8rem;
+    }
+
+    .btn-all-offers {
+        width: 90%;
+        min-width: 230px;
+        height: 39px;
+        background-color: #FA6933;
+        color: #fff;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+        margin-top: 20px;
+    }
+
+    /* SECTION 2 MOBILE */
+
+    #section-2 {
+        width: 90%;
+        margin: auto auto 20px auto;
+    }
+
+    .article-card-border {
+        height: 30vh;
+        min-height: 300px;
+        width: 100%;
+        margin: 20px auto 40px auto;
+        border-radius: 5px;
+        position: relative;
+        overflow: visible;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    }
+
+    #picture-article-1-section-2 {
+        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    }
+
+    #picture-article-2-section-2 {
+        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    }
+
+    #picture-article-3-section-2 {
+        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    }
+
+    .picture-top-card-section-2 {
+        background-size: cover;
+        background-position: center;
+        min-height: 160px;
+        height: 50%;
+        position: relative;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .tag-alerte {
+        background-color: #FA6933;
+        color: #fff;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-description-section-2 {
+        height: 50%;
+        padding: 10px 20px 10px 20px;
+        overflow: auto;
+    }
+
+    .sub-title-card {
+        margin-bottom: 10px;
+    }
+
+    .more-info-card-right {
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        font-size: 0.8rem;
+    }
+
+    /* SECTION 3 MOBILE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .title-section-h2 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 24px;
+    }
+
+    .title-card-h3 {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+}
