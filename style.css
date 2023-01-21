@@ -8,6 +8,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF9F8;
 }
 
 .row-limit-size {
@@ -32,6 +33,7 @@ body {
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
+        background-color: #FAF9F8;
     }
 
     #nav-logo {
@@ -73,7 +75,6 @@ body {
         width: 100%;
         margin: auto auto 40px auto;
         color: #fff;
-        border-radius: 20px;
         padding: 70px 30px;
         text-align: center;
         position: relative;
@@ -122,11 +123,51 @@ body {
         margin-right: 10px;
     }
 
+    /* SECTION 0 MOBILE */
+
+    #section-0 {
+        width: 90%;
+        margin: auto auto 20px auto;
+        background-color: #FAF9F8;
+    }
+
+    .article-section-0 {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 40px 0;
+    }
+
+    .picture-square-town {
+        border-radius: 5px;
+        height: 15vh;
+        max-width: 40%;
+    }
+
+    #right-margin-picture {
+        margin-right: 25px;
+    }
+
+    #left-margin-picture {
+        margin-left: 25px;
+    }
+
+    .article-section-0-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .article-section-0-description>h3,
+    .article-section-0-description>h4 {
+        text-align: center;
+    }
+
     /* SECTION 1 MOBILE */
 
     #section-1 {
         width: 90%;
         margin: auto auto 20px auto;
+        background-color: #FAF9F8;
     }
 
     .hr-section-h2 {
@@ -223,11 +264,42 @@ body {
         margin-top: 20px;
     }
 
+    /* SECTION ARRIVAGE MOBILE */
+
+    #section-arrivage {
+        width: 90%;
+        margin: auto auto 20px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .article-section-arrivage {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 40px 0;
+        width: 40%;
+    }
+
+    .picture-new-town {
+        border-radius: 5px;
+        height: 15vh;
+        width: 100%;
+    }
+
+    .article-section-arrivage>h3 {
+        margin: 10px 0 8px 0;
+    }
+
     /* SECTION 2 MOBILE */
 
     #section-2 {
         width: 90%;
         margin: auto auto 20px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .article-card-border {
@@ -289,6 +361,23 @@ body {
     }
 
     /* SECTION 3 MOBILE */
+
+    #section-3 {
+        width: 90%;
+        margin: auto auto 20px auto;
+    }
+
+    .article-section-3 {
+        width: 100%;
+        margin: 30px 0 20px 0;
+    }
+
+    .picture-activity {
+        height: 5vh;
+        width: 100%;
+    }
+
+
 
 
 
