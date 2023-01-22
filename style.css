@@ -171,17 +171,25 @@ body {
 
     /* ---- SECTION 1 MOBILE ---- */
 
-    #section-1 {
+    body #section-1 {
         width: 90%;
         margin: auto auto 20px auto;
         background-color: #FAF9F8;
+    }
+
+    #section-1 .container-btn-tag-desktop {
+        display: none;
     }
 
     .hr-section-h2 {
         width: 98%;
     }
 
-    .article-card-shadow {
+    .article-card-shadow .container-picture-destop-section-1 {
+        display: none;
+    }
+
+    #section-1 .article-card-shadow {
         height: 60vh;
         min-height: 370px;
         width: 100%;
@@ -191,6 +199,7 @@ body {
         overflow: visible;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         background-color: #fff;
+        display: block;
     }
 
     #picture-article-1 {
@@ -220,10 +229,11 @@ body {
         right: 10px;
     }
 
-    .card-description-section-1 {
+    .article-card-shadow .card-description-section-1-mobile {
         height: 50%;
         padding: 10px 20px 10px 20px;
         overflow: auto;
+        display: block;
     }
 
     .picto-share-card {
@@ -281,6 +291,11 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .title-section-h2 {
+        margin-top: 10px;
+        width: 100%;
     }
 
     .article-section-arrivage {
@@ -778,7 +793,10 @@ h1 {
     opacity: 80%;
 }
 
-#hero, #intro-tittle, h1, #search-bar-descktop {
+#hero,
+#intro-tittle,
+h1,
+#search-bar-descktop {
     position: relative;
 }
 
@@ -786,20 +804,21 @@ h1 {
 
 #section-0 {
     width: 70vw;
-    margin: 0 auto 200px auto ;
+    margin: 0 auto 10vh auto;
     background-color: #FAF9F8;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #section-0 .title-section-h2 {
     width: 100%;
 }
 
-.article-section-0, .section-0-desktop-extension {
+.article-section-0,
+.section-0-desktop-extension {
     display: flex;
-    margin: 30px 0 40px 0;
+    margin: 30px 0 20px 0;
 }
 
 .picture-square-town {
@@ -821,4 +840,141 @@ h1 {
 .article-section-0-description>h3,
 .article-section-0-description>h4 {
     text-align: center;
+}
+
+/* ---- SECTION 1 DESKTOP ---- */
+
+#section-1 {
+    width: 80vw;
+    margin: auto auto 20px auto;
+    background-color: #FAF9F8;
+    position: relative;
+}
+
+.container-btn-tag-desktop {
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    top: -5px;
+}
+
+.btn-tag-desktop {
+    width: 123px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px solid #FA6933;
+    background-color: #fff;
+    color: #FA6933;
+}
+
+.hr-section-h2 {
+    width: 98%;
+}
+
+.container-picture-destop-section-1 {
+    width: 50%;
+    max-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.picture-desktop-section-1 {
+    height: 34vh;
+    border-radius: 0 0 5px 0;
+    width: 40%;
+}
+
+.picture-desktop-section-1:nth-of-type(2) {
+    height: 34vh;
+    margin-bottom: 2vh;
+    border-radius: 0 5px 0 0;
+}
+
+.picture-desktop-section-1:first-of-type {
+    height: 70vh;
+    width: 60%;
+    margin-right: 1vw;
+    border-radius: 5px 0 0 5px;
+}
+
+/* .article-card-shadow {
+    display: none;
+}
+
+#picture-article-1 {
+    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+}
+
+#picture-article-2 {
+    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+}
+
+#picture-article-3 {
+    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+}
+
+.picture-top-card {
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    height: 50%;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+/* .card-heart {
+display: none;
+} */
+
+ /* .card-description-section-1-mobile {
+    display: none;
+} 
+
+.picto-share-card {
+    position: absolute;
+    right: 10px;
+    top: 55%;
+}
+
+.title-card {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.card-price {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.card-like {
+    margin: 10px auto 15px auto;
+}
+
+.note-star {
+    margin-right: 15px;
+}
+
+.card-text-description {
+    text-justify: auto;
+    overflow-wrap: break-word;
+    font-size: 0.8rem;
+}  */
+
+.btn-all-offers {
+    width: 90%;
+    min-width: 230px;
+    height: 39px;
+    background-color: #FA6933;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    margin-top: 20px;
 }
