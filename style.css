@@ -12,18 +12,17 @@ body {
 }
 
 .row-limit-size {
-    max-width: 1200px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 }
 
-/* MOBILE */
+/* ---- MOBILE ---- */
 
 @media screen and (max-width: 390px) {
 
     /* HEADER MOBILE - NAV BAR */
-    #header {
-        /* max-width: 390px; */
+    body #header {
         width: 100%;
         margin: 10px auto 0 auto;
         position: absolute;
@@ -31,38 +30,40 @@ body {
         z-index: 9999;
     }
 
-    #nav-top {
+    #header #nav-top {
         height: 50px;
         width: 90%;
         display: flex;
         justify-content: space-between;
         margin: 0 auto 10px auto;
+        /* padding-right: 5%; */
     }
 
-    #nav-logo {
+    #header #nav-logo {
         height: 50px;
         line-height: 50px;
         display: flex;
     }
 
-    .logo-text {
+    #nav-logo .logo-text {
         font-size: 1.4rem;
         font-weight: bold;
     }
 
-    #nav-connexion {
+    #nav-top #nav-connexion {
         display: flex;
-        align-items: baseline;
+        width: 32%;
+        justify-content: space-evenly;
     }
 
-    #picto-global {
-        margin: auto 10px auto 0;
+    #nav-connexion #picto-global {
+        margin: auto 0 auto 0;
         opacity: 60%;
     }
 
-    #picto-customer {
-        margin: auto;
-
+    #nav-connexion #picto-customer {
+        display: block;
+        margin: auto 0 auto 0;
     }
 
     #btn-connexion,
@@ -70,39 +71,36 @@ body {
         display: none;
     }
 
-    /* HERO MOBILE */
+    /* ---- HERO MOBILE ---- */
 
-    #hero {
-        background: url(./img/pexels-travelers-way-13851928.jpg) red;
-        background-size: cover;
-        background-position: center;
+    main #hero {
         height: 100vh;
         width: 100%;
-        margin: auto auto 40px auto;
-        color: #fff;
+        border-radius: 0px;
         padding: 35% 30px;
-        text-align: center;
-        position: relative;
+        margin: auto auto 40px auto;
     }
 
     #hero>#intro-tittle {
         font-size: 1rem;
-        line-height: 24px;
-        color: #FFFFFF;
-        text-transform: capitalize;
+        top: 2%
     }
 
-    #hero h1 {
-        font-weight: 400;
-        font-size: 1.4rem;
+    #hero>h1 {
+        font-weight: bold;
+        font-size: 1.5rem;
         line-height: 30px;
         color: #FFFFFF;
         text-transform: uppercase;
-        margin-top: 15%;
+        top: 10%;
     }
 
-    #search-bar-descktop {
+    #hero>#search-bar-descktop {
         display: none;
+    }
+
+    #hero>#search-bar-mobile {
+        display: block;
     }
 
     #btn-search-mobile {
@@ -127,21 +125,22 @@ body {
         margin-right: 10px;
     }
 
-    /* SECTION 0 MOBILE */
+    /* ---- SECTION 0 MOBILE ---- */
 
-    #section-0 {
+    body #section-0 {
         width: 90%;
         margin: auto auto 20px auto;
         background-color: #FAF9F8;
+        display: block;
     }
 
-    .article-section-0 {
+    #section-0 .article-section-0 {
         display: flex;
         justify-content: center;
         margin: 30px 0 40px 0;
     }
 
-    .picture-square-town {
+    .article-section-0 .picture-square-town {
         border-radius: 5px;
         height: 15vh;
         max-width: 40%;
@@ -166,7 +165,11 @@ body {
         text-align: center;
     }
 
-    /* SECTION 1 MOBILE */
+    #section-0 .section-0-desktop-extension {
+        display: none;
+    }
+
+    /* ---- SECTION 1 MOBILE ---- */
 
     #section-1 {
         width: 90%;
@@ -269,7 +272,7 @@ body {
         margin-top: 20px;
     }
 
-    /* SECTION ARRIVAGE MOBILE */
+    /* ---- SECTION ARRIVAGE MOBILE ---- */
 
     #section-arrivage {
         width: 90%;
@@ -303,7 +306,7 @@ body {
         opacity: 30%;
     }
 
-    /* SECTION 2 MOBILE */
+    /* ---- SECTION 2 MOBILE ---- */
 
     #section-2 {
         width: 90%;
@@ -372,7 +375,7 @@ body {
         font-size: 0.8rem;
     }
 
-    /* SECTION 3 MOBILE */
+    /* ---- SECTION 3 MOBILE ---- */
 
     #section-3 {
         width: 90%;
@@ -408,7 +411,7 @@ body {
         border: 1px solid #000;
     }
 
-    /* SECTION 4 MOBILE */
+    /* ---- SECTION 4 MOBILE ---- */
 
     #section-4 {
         width: 100%;
@@ -448,7 +451,7 @@ body {
         margin-top: 30px;
     }
 
-    /* SECTION 5 MOBILE */
+    /* ---- SECTION 5 MOBILE ---- */
 
     #section-5 {
         width: 90%;
@@ -487,7 +490,7 @@ body {
         width: 100%;
     }
 
-    /* FOOTER MOBILE */
+    /* ---- FOOTER MOBILE ---- */
 
     #footer {
         display: flex;
@@ -629,31 +632,12 @@ body {
         margin: 0 3% 0 3%;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* ---- FONT-PICTO-COMMUN ---- */
 
     .height-picto {
         height: 35px;
     }
+
 
     .title-section-h2 {
         font-weight: bold;
@@ -665,14 +649,176 @@ body {
         font-weight: bold;
         font-size: 1.1rem;
     }
+}
 
+/* ---- header - NAV BAR TOP - DESKTOP ---- */
 
+#header {
+    width: 95vw;
+    margin: 20px auto;
+}
 
+#nav-top {
+    height: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 10px auto;
+}
 
+#nav-logo {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+}
 
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
+#nav-connexion {
+    display: flex;
+    align-items: baseline;
+    width: 20%;
 
+}
 
+#picto-global {
+    margin: auto 3% auto 0;
+    opacity: 60%;
+}
 
+#picto-customer {
+    display: none;
+}
 
+#btn-connexion {
+    width: 123px;
+    height: 47px;
+    background-color: #FA6933;
+    color: #fff;
+    border: #FA6933;
+    border-radius: 5px;
+}
+
+#btn-contact {
+    width: 123px;
+    height: 47px;
+    background-color: #fff;
+    color: #FA6933;
+    border: 1px solid #FA6933;
+    border-radius: 5px;
+    margin-left: 3%;
+}
+
+/* ---- MAIN - HERO - DESKTOP ---- */
+
+#hero {
+    background: url(./img/pexels-travelers-way-13851928.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 80vw;
+    margin: auto auto 10vh auto;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#intro-tittle {
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: #FFFFFF;
+    top: 10%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 45px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 20%;
+}
+
+#search-bar-mobile {
+    display: none;
+}
+
+#search-bar-descktop {
+    display: flex;
+    width: 75%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#search-bar-descktop>div {
+    width: 20%;
+    height: 70px;
+    background-color: #fff;
+    color: #000;
+    border-left: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.color-black-search {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.color-gray-search {
+    font-size: 1rem;
+    opacity: 80%;
+}
+
+#hero, #intro-tittle, h1, #search-bar-descktop {
+    position: relative;
+}
+
+/* ---- SECTION 0 DESKTOP ---- */
+
+#section-0 {
+    width: 70vw;
+    margin: 0 auto 200px auto ;
+    background-color: #FAF9F8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#section-0 .title-section-h2 {
+    width: 100%;
+}
+
+.article-section-0, .section-0-desktop-extension {
+    display: flex;
+    margin: 30px 0 40px 0;
+}
+
+.picture-square-town {
+    border-radius: 5px;
+    height: 10vh;
+    max-width: 30%;
+}
+
+#right-margin-picture {
+    margin-right: 25px;
+}
+
+.article-section-0-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.article-section-0-description>h3,
+.article-section-0-description>h4 {
+    text-align: center;
 }
