@@ -278,37 +278,30 @@ body {
     /* ---- SECTION 3 MOBILE ---- */
 
     #section-3 {
-        width: 90%;
-        margin: auto auto 20px auto;
+        margin: 0 auto 20px auto;
     }
 
     .article-section-3 {
-        width: 100%;
-        margin: 30px 0 20px 0;
+        flex-direction: column;
     }
 
-    .article-section-3>.picture-activty {
-        height: 8vh;
+    #section-3 .article-section-3 .picture-activty {
+        height: 20vh;
         width: 90%;
-        border-radius: 50px;
-        margin-top: 40px;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        margin: 0 auto 40px auto;
     }
 
+    .article-section-3 .container-activity-description {
+        width: 80vw;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    .container-activity-description 
     .activity-description {
-        margin-top: -10px;
-        text-justify: inter-word;
-        line-height: 24px;
-        font-size: 1rem;
-    }
-
-    .hr-section-3 {
-        margin: 50px auto;
-        width: 40%;
-        border: 1px solid #000;
+        width: 100%;
+        margin-top: 20px;
     }
 
     /* ---- SECTION 4 MOBILE ---- */
@@ -323,17 +316,27 @@ body {
         margin-bottom: 20px;
     }
 
-    .container-temoignages {
-        background-color: #FBE3DA;
-        overflow: auto;
-        padding: 20px 20px 20px 20px;
-
+    #section-4 .container-temoignages {
+        height: 65vh;
+        padding: 20px;
     }
 
-    .double-cote-left {
+    .container-temoignages .double-cote-left {
         float: left;
         height: 30px;
         margin: -10px 10px -10px 0;
+    }
+
+    .container-temoignages #temoignage-1 {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+    
+    .container-temoignages #temoignage-2 {
+        width: 100%;
+        height: 50%;
+        margin: 5vh 0;
     }
 
     .temoignage {
@@ -345,6 +348,10 @@ body {
 
     .container-temoignages h5 {
         margin: 10px 0;
+    }
+
+    #temoignage-1 .picto-temoignage-desktop, #temoignage-2 .picto-temoignage-desktop {
+        display: none;
     }
 
     #temoignage-2 {
@@ -981,23 +988,32 @@ h1,
 
 #section-3 {
     width: 90%;
-    margin: auto auto 20px auto;
+    margin: 5vh auto 20px auto;
+}
+
+#section-3>h2 {
+    text-align: center;
 }
 
 .article-section-3 {
     width: 100%;
     margin: 30px 0 20px 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .article-section-3>.picture-activty {
-    height: 8vh;
+    height: 25vh;
     width: 20%;
-    border-radius: 50px;
-    margin-top: 40px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.container-activity-description {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .activity-description {
@@ -1011,4 +1027,67 @@ h1,
     margin: 50px auto;
     width: 40%;
     border: 1px solid #000;
+}
+
+/* ---- SECTION 4 DESKTOP ---- */
+
+#section-4 {
+    width: 100%;
+    margin: 50px auto 20px auto;
+}
+
+#section-4>h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-temoignages {
+    background-color: #FBE3DA;
+    height: 45vh;
+    padding: 10vh 0;
+}
+
+#temoignage-1 {
+    display: flex;
+    width: 50vw;
+    height: 50%;
+    margin-left: 5vw;
+}
+
+#temoignage-2 {
+    display: flex;
+    width: 50vw;
+    height: 50%;
+    margin-left: 50vw;
+}
+
+.double-cote-left {
+    float: left;
+    height: 50px;
+    margin: -10px 10px -10px 0;
+}
+
+.picto-temoignage-desktop {
+    margin-right: 3vw;
+    height: 10vh;
+}
+
+.temoignage-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.temoignage {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 24px;
+    text-justify: inter-word;
+}
+
+.container-temoignages h5 {
+    margin: 10px 0;
+}
+
+#temoignage-2 {
+    margin-top: 30px;
 }
