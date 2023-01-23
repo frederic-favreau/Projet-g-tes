@@ -173,8 +173,6 @@ body {
 
     body #section-1 {
         width: 90%;
-        margin: auto auto 20px auto;
-        background-color: #FAF9F8;
     }
 
     #section-1 .container-btn-tag-desktop {
@@ -185,33 +183,20 @@ body {
         width: 98%;
     }
 
-    .article-card-shadow .container-picture-destop-section-1 {
+    .container-card-section-1 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .article-card-shadow-desktop {
         display: none;
     }
 
     #section-1 .article-card-shadow {
-        height: 60vh;
+        height: 70vh;
         min-height: 370px;
         width: 100%;
         margin: 20px auto 40px auto;
-        border-radius: 5px 5px 0 0;
-        position: relative;
-        overflow: visible;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        background-color: #fff;
-        display: block;
-    }
-
-    #picture-article-1 {
-        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
-    }
-
-    #picture-article-2 {
-        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
-    }
-
-    #picture-article-3 {
-        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
     }
 
     .picture-top-card {
@@ -223,171 +208,71 @@ body {
         border-radius: 5px 5px 0 0;
     }
 
-    .card-heart {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+    .card-description-section-1-mobile .title-card {
+        margin: 12px 0 10px 0;
     }
 
-    .article-card-shadow .card-description-section-1-mobile {
-        height: 50%;
-        padding: 10px 20px 10px 20px;
-        overflow: auto;
-        display: block;
-    }
-
-    .picto-share-card {
-        position: absolute;
-        right: 10px;
-        top: 55%;
-    }
-
-    .title-card {
-        font-weight: bold;
-        font-size: 1rem;
-        line-height: 20px;
-        margin-bottom: 8px;
-    }
-
-    .card-price {
-        font-weight: 500;
-        font-size: 1rem;
-    }
-
-    .card-like {
-        margin: 10px auto 15px auto;
-    }
-
-    .note-star {
-        margin-right: 15px;
-    }
-
-    .card-text-description {
-        text-justify: auto;
-        overflow-wrap: break-word;
+    .card-description-section-1-mobile .card-text-description {
         font-size: 0.8rem;
+        line-height: 18px;
     }
 
     .btn-all-offers {
         width: 90%;
-        min-width: 230px;
-        height: 39px;
-        background-color: #FA6933;
-        color: #fff;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: none;
         margin-top: 20px;
     }
 
     /* ---- SECTION ARRIVAGE MOBILE ---- */
 
-    #section-arrivage {
-        width: 90%;
-        margin: auto auto 20px auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    body #section-arrivage {
         justify-content: space-between;
     }
 
-    .title-section-h2 {
-        margin-top: 10px;
-        width: 100%;
+    #section-arrivage .title-section-h2 {
+        margin: 10px 0;
     }
 
-    .article-section-arrivage {
-        display: flex;
-        flex-direction: column;
+    #section-arrivage .article-section-arrivage-desktop {
+        display: none;
+    }
+
+    #section-arrivage .article-section-arrivage {
         margin: 30px 0 40px 0;
         width: 45%;
     }
 
-    .picture-new-town {
-        border-radius: 5px;
-        height: 15vh;
-        width: 100%;
-    }
-
-    .article-section-arrivage>h3 {
-        margin: 10px 0 8px 0;
-    }
-
-    .hr-opacity {
+    #section-arrivage .hr-opacity-mobile {
         width: 90%;
         margin-left: 5%;
         opacity: 30%;
     }
 
+    #section-arrivage .hr-opacity-desktop {
+        display: none;
+    }
+
+    #section-arrivage .hr-opacity-mobile {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2vh;
+        opacity: 30%;
+        display: block;
+    }
+
     /* ---- SECTION 2 MOBILE ---- */
 
-    #section-2 {
-        width: 90%;
-        margin: auto auto 20px auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    body #section-2 {
+        width: 80%;
+        margin: 0 auto 20px auto;
     }
 
-    .article-card-border {
-        height: 30vh;
-        min-height: 300px;
+    #section-2 .article-card-border {
         width: 100%;
         margin: 20px auto 40px auto;
-        border-radius: 5px;
-        position: relative;
-        overflow: visible;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-        background-color: #fff;
     }
 
-    #picture-article-1-section-2 {
-        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
-    }
-
-    #picture-article-2-section-2 {
-        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
-    }
-
-    #picture-article-3-section-2 {
-        background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
-    }
-
-    .picture-top-card-section-2 {
-        background-size: cover;
-        background-position: center;
-        min-height: 160px;
-        height: 50%;
-        position: relative;
-        border-radius: 5px 5px 0 0;
-    }
-
-    .tag-alerte {
-        background-color: #FA6933;
-        color: #fff;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-        border-radius: 5px 5px 0 0;
-    }
-
-    .card-description-section-2 {
-        height: 50%;
-        padding: 10px 20px 10px 20px;
-        overflow: auto;
-    }
-
-    .sub-title-card {
-        margin-bottom: 10px;
-    }
-
-    .more-info-card-right {
-        position: absolute;
-        bottom: 10px;
-        right: 5px;
-        font-size: 0.8rem;
+    #section-2 .article-card-border-desktop {
+        display: none;
     }
 
     /* ---- SECTION 3 MOBILE ---- */
@@ -869,39 +754,30 @@ h1,
     color: #FA6933;
 }
 
-.hr-section-h2 {
-    width: 98%;
-}
-
-.container-picture-destop-section-1 {
-    width: 50%;
-    max-height: 70vh;
+.container-card-section-1 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2vh;
 }
 
-.picture-desktop-section-1 {
-    height: 34vh;
-    border-radius: 0 0 5px 0;
-    width: 40%;
+.article-card-shadow,
+.article-card-shadow-desktop {
+    height: 45vh;
+    min-height: 370px;
+    width: 25%;
+    margin: 20px 2vw 40px 2vw;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    overflow: visible;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #fff;
 }
 
-.picture-desktop-section-1:nth-of-type(2) {
-    height: 34vh;
-    margin-bottom: 2vh;
-    border-radius: 0 5px 0 0;
-}
-
-.picture-desktop-section-1:first-of-type {
-    height: 70vh;
-    width: 60%;
-    margin-right: 1vw;
-    border-radius: 5px 0 0 5px;
-}
-
-/* .article-card-shadow {
-    display: none;
+.card-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 #picture-article-1 {
@@ -925,13 +801,11 @@ h1,
     border-radius: 5px 5px 0 0;
 }
 
-/* .card-heart {
-display: none;
-} */
-
- /* .card-description-section-1-mobile {
-    display: none;
-} 
+.card-description-section-1-mobile {
+    height: 50%;
+    padding: 10px 20px 10px 20px;
+    overflow: auto;
+}
 
 .picto-share-card {
     position: absolute;
@@ -943,7 +817,7 @@ display: none;
     font-weight: bold;
     font-size: 1rem;
     line-height: 20px;
-    margin-bottom: 8px;
+    margin: 15px 0 10px 0;
 }
 
 .card-price {
@@ -962,11 +836,12 @@ display: none;
 .card-text-description {
     text-justify: auto;
     overflow-wrap: break-word;
-    font-size: 0.8rem;
-}  */
+    font-size: 1rem;
+    line-height: 20px;
+}
 
 .btn-all-offers {
-    width: 90%;
+    width: 30%;
     min-width: 230px;
     height: 39px;
     background-color: #FA6933;
@@ -976,5 +851,164 @@ display: none;
     left: 50%;
     transform: translate(-50%, -50%);
     border: none;
-    margin-top: 20px;
+    margin-top: 35px;
+}
+
+/* ---- SECTION ARRIVAGE DESKTOP ---- */
+
+#section-arrivage {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.title-section-h2 {
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.article-section-arrivage, .article-section-arrivage-desktop {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 15%;
+}
+
+.picture-new-town {
+    border-radius: 5px;
+    height: 15vh;
+    width: 100%;
+}
+
+.article-section-arrivage>h3 {
+    margin: 10px 0 8px 0;
+}
+
+.hr-opacity-mobile {
+    display: none;
+}
+
+.hr-opacity-desktop {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    opacity: 30%;
+}
+
+/* ---- SECTION 2 DESKTOP ---- */
+
+#section-2 {
+    width: 90%;
+    margin: 40px auto 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#section-2>h2 {
+    width: 100%;
+    margin-left: 25px;
+}
+
+.hr-section-h2 {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.article-card-border, .article-card-border-desktop {
+    height: 30vh;
+    min-height: 300px;
+    width: 22%;
+    margin: 30px auto 30px auto;
+    border-radius: 5px;
+    position: relative;
+    overflow: visible;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    background-color: #fff;
+}
+
+#picture-article-1-section-2 {
+    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+}
+
+#picture-article-2-section-2 {
+    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+}
+
+#picture-article-3-section-2 {
+    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+}
+
+.picture-top-card-section-2 {
+    background-size: cover;
+    background-position: center;
+    min-height: 160px;
+    height: 50%;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+.tag-alerte {
+    background-color: #FA6933;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-description-section-2 {
+    height: 50%;
+    padding: 10px 20px 10px 20px;
+    overflow: auto;
+}
+
+.sub-title-card {
+    margin-bottom: 10px;
+}
+
+.more-info-card-right {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    font-size: 0.8rem;
+}
+
+/* ---- SECTION 3 DESKTOP ---- */
+
+#section-3 {
+    width: 90%;
+    margin: auto auto 20px auto;
+}
+
+.article-section-3 {
+    width: 100%;
+    margin: 30px 0 20px 0;
+}
+
+.article-section-3>.picture-activty {
+    height: 8vh;
+    width: 20%;
+    border-radius: 50px;
+    margin-top: 40px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.activity-description {
+    margin-top: -10px;
+    text-justify: inter-word;
+    line-height: 24px;
+    font-size: 1rem;
+}
+
+.hr-section-3 {
+    margin: 50px auto;
+    width: 40%;
+    border: 1px solid #000;
 }
