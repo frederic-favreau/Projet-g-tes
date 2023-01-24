@@ -57,31 +57,31 @@ body {
     /* HEADER MOBILE - NAV BAR */
     body #header {
         width: 100%;
-        margin: 10px auto 0 auto;
+        margin: 0 auto;
         position: absolute;
         top: 0;
         z-index: 9999;
     }
 
     #header #nav-top {
-        height: 50px;
-        width: 90%;
+        height: 10vh;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0 auto 10px auto;
-        /* padding-right: 5%; */
+        background-color: #FAF9F8;
     }
 
     #header #nav-logo {
         height: 50px;
         line-height: 50px;
         display: flex;
+        margin: auto 5%;
     }
 
     #nav-logo .logo-text {
         font-size: 1.4rem;
         font-weight: bold;
-        color: #fff;
+        color: #000;
     }
 
     #nav-top #nav-connexion {
@@ -93,12 +93,15 @@ body {
     #nav-connexion #picto-global {
         margin: auto 0 auto 0;
         opacity: 60%;
-
     }
 
     #nav-connexion #picto-customer {
         display: block;
         margin: auto 0 auto 0;
+    }
+
+    #picto-customer:hover {
+        transform: scale(1.2);
     }
 
     #btn-connexion,
@@ -161,7 +164,7 @@ body {
         margin-right: 10px;
     }
 
-    /* ---- SECTION 0 MOBILE ---- */
+    /* ---- SECTION 0 - EXPLORER A PROXIMITE - MOBILE ---- */
 
     body #section-0 {
         width: 90%;
@@ -172,7 +175,6 @@ body {
 
     #section-0 .article-section-0 {
         display: flex;
-        justify-content: center;
         margin: 30px 0 40px 0;
         width: 100%;
     }
@@ -181,14 +183,11 @@ body {
         border-radius: 5px;
         height: 15vh;
         max-width: 40%;
+        margin-left: 0;
     }
 
     #right-margin-picture {
         margin-right: 25px;
-    }
-
-    #left-margin-picture {
-        margin-left: 25px;
     }
 
     .article-section-0-description {
@@ -206,7 +205,7 @@ body {
         display: none;
     }
 
-    /* ---- SECTION 1 MOBILE ---- */
+    /* ---- SECTION 1 - COUP DE COEUR - MOBILE ---- */
 
     body #section-1 {
         width: 90%;
@@ -214,6 +213,11 @@ body {
 
     #section-1 .container-btn-tag-desktop {
         display: none;
+    }
+
+    body #section-1 h2 {
+        font-size: 1.6rem;
+        margin-left: 4vw;
     }
 
     .hr-section-h2 {
@@ -278,12 +282,16 @@ body {
         height: 40px;
     }
 
-    /* ---- SECTION 2 MOBILE ---- */
+    /* ---- SECTION 2 - OFFRE DE DERNIERES MINUTES - MOBILE ---- */
 
     body #section-2 {
         width: 90%;
         margin: 5vh auto auto;
         background-color: #FAF9F8;
+    }
+
+    body #section-2 h2 {
+        font-size: 1.6rem;
     }
 
     #section-2 .article-card-border {
@@ -299,7 +307,7 @@ body {
         display: none;
     }
 
-    /* ---- SECTION 3 MOBILE ---- */
+    /* ---- SECTION 3 - ACTIVITE AUTOUR DE NOS GITES - MOBILE ---- */
 
     #section-3 {
         margin: 0 auto 20px auto;
@@ -327,7 +335,7 @@ body {
         margin-top: 20px;
     }
 
-    /* ---- SECTION 4 MOBILE ---- */
+    /* ---- SECTION 4 - TEMOIGNAGES - MOBILE ---- */
 
     #section-4 .title-section-h2-mobile {
         display: block;
@@ -337,11 +345,11 @@ body {
     }
 
     #section-4 .container-temoignages {
-        height: 65vh;
+        height: 70vh;
         padding: 20px;
     }
 
-    .container-temoignages .title-section-h2-desktop {
+    .container-temoignages #title-section-h2-desktop {
         display: none;
     }
 
@@ -365,11 +373,15 @@ body {
         display: none;
     }
 
-    /* ---- SECTION 5 MOBILE ---- */
+    .temoignage-description .temoignage {
+        font-size: 1rem;
+    }
+
+    /* ---- SECTION 5 - CONTACTEZ-NOUS MOBILE ---- */
 
     body #section-5 {
         width: 90%;
-        height: 70vh;
+        height: 80vh;
         margin: 35px auto 20px auto;
     }
 
@@ -545,13 +557,9 @@ body {
 }
 
 #btn-contact:hover {
-    width: 123px;
-    height: 47px;
     background-color: #FA6933;
     color: #fff;
     border: 1px solid #FA6933;
-    border-radius: 5px;
-    margin-left: 3%;
     cursor: pointer;
 }
 
@@ -564,7 +572,7 @@ body {
     height: 80vh;
     width: 80vw;
     margin: auto auto 10vh auto;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 20px;
 }
@@ -572,7 +580,7 @@ body {
 #intro-tittle {
     font-size: 1.6rem;
     line-height: 24px;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     top: 10%;
 }
 
@@ -580,7 +588,7 @@ h1 {
     font-weight: 400;
     font-size: 2.5rem;
     line-height: 45px;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bold;
     top: 20%;
@@ -632,7 +640,7 @@ h1,
     position: relative;
 }
 
-/* ---- SECTION 0 DESKTOP ---- */
+/* ---- SECTION 0 - EXPLORER A PROXIMITE - DESKTOP ---- */
 
 #section-0 {
     width: 70vw;
@@ -651,19 +659,20 @@ h1,
 .article-section-0,
 .section-0-desktop-extension {
     display: flex;
-    margin: 30px 0 20px 0;
-    width: 25%;
+    margin: 30px 2% 20px 3%;
+    width: 20%;
 }
 
 .picture-square-town {
     border-radius: 5px;
     height: 10vh;
-    max-width: 30%;
+    max-width: 35%;
 }
 
 .article-section-0:hover {
-    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #right-margin-picture {
@@ -679,7 +688,7 @@ h1,
 
 .title-card-h3 {
     position: relative;
-    text-align: end;
+    left: 0;
 }
 
 .title-card-h3::before {
@@ -698,7 +707,7 @@ h1,
     text-align: center;
 }
 
-/* ---- SECTION 1 DESKTOP ---- */
+/* ---- SECTION 1 - COUP DE COEUR - DESKTOP ---- */
 
 #section-1 {
     width: 80vw;
@@ -709,7 +718,7 @@ h1,
 
 #section-1 h2 {
     font-size: 1.8rem;
-    margin-left: 1vw;
+    margin-left: 4vw;
 }
 
 .container-btn-tag-desktop {
@@ -731,7 +740,9 @@ h1,
 }
 
 .btn-tag-desktop:hover {
-cursor: pointer;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
 }
 
 .container-card-section-1 {
@@ -752,11 +763,13 @@ cursor: pointer;
     overflow: visible;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     background-color: #fff;
+    transition: all 0.5s ease;
 }
 
-.article-card-shadow:hover {
+.article-card-shadow:hover,
+.article-card-shadow-desktop:hover {
     transform: scale(1.05);
-    transition: all 0.8s ease;
+    cursor: pointer;
 }
 
 .card-heart {
@@ -775,6 +788,18 @@ cursor: pointer;
 
 #picture-article-3 {
     background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+}
+
+#picture-article-4 {
+    background-image: url(./img/chalet\ plaine.jpeg);
+}
+
+#picture-article-5 {
+    background-image: url(./img/gites-forets.jpeg);
+}
+
+#picture-article-6 {
+    background-image: url(./img/montagne-gites.webp);
 }
 
 .picture-top-card {
@@ -822,7 +847,7 @@ cursor: pointer;
     text-justify: auto;
     overflow-wrap: break-word;
     font-size: 1rem;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .btn-all-offers {
@@ -837,6 +862,13 @@ cursor: pointer;
     transform: translate(-50%, -50%);
     border: none;
     margin-top: 35px;
+}
+
+.btn-all-offers:hover {
+    background-color: #fff;
+    color: #FA6933;
+    border: 1px solid #FA6933;
+    cursor: pointer;
 }
 
 /* ---- SECTION FRANCHISE DESKTOP ---- */
@@ -880,7 +912,14 @@ cursor: pointer;
     border-radius: 5px;
 }
 
-/* ---- SECTION 2 DESKTOP ---- */
+#btn-join-franchise:hover {
+    background-color: #fff;
+    color: #FA6933;
+    border: 1px solid #FA6933;
+    cursor: pointer;
+}
+
+/* ---- SECTION 2 - OFFRE DE DERNIERES MINUTES - DESKTOP ---- */
 
 #section-2 {
     width: 100%;
@@ -889,17 +928,17 @@ cursor: pointer;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #FBE3DA;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding: 10vh 0;
 }
 
 #section-2>h2 {
     width: 90%;
     margin-left: 25px;
+    font-size: 1.8rem;
 }
 
 .hr-section-h2 {
-    width: 97%;
+    width: 88%;
     margin: 0 auto;
 }
 
@@ -914,18 +953,63 @@ cursor: pointer;
     overflow: visible;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+.article-card-border:hover,
+.article-card-border-desktop:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.article-card-border:hover .oclock,
+.article-card-border-desktop:hover .oclock {
+    animation: oclockturn 1s infinite;
+}
+
+.oclock {
+    position: absolute;
+    right: 10%;
+    top: 82%;
+    height: 60px;
+}
+
+@keyframes oclockturn {
+    from {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 #picture-article-1-section-2 {
-    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    background-image: url(./img/inté-1.jpeg);
 }
 
 #picture-article-2-section-2 {
-    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    background-image: url(./img/inté-2.jpeg);
 }
 
 #picture-article-3-section-2 {
-    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    background-image: url(./img/inté-3.jpeg);
+}
+
+#picture-article-4-section-2 {
+    background-image: url(./img/inté-4.jpeg);
 }
 
 .picture-top-card-section-2 {
@@ -958,13 +1042,13 @@ cursor: pointer;
 
 .more-info-card-right {
     position: absolute;
-    bottom: 10px;
-    right: 5px;
+    bottom: 20px;
+    right: 15px;
     font-size: 0.8rem;
 }
 
 #btn-all-offers-section-2 {
-    margin: 0 auto;
+    margin: 1vh auto;
     width: 30%;
     min-width: 230px;
     height: 39px;
@@ -973,29 +1057,64 @@ cursor: pointer;
     border: none;
 }
 
-/* ---- SECTION 3 - CARTE CADEAU DESKTOP ---- */
+#btn-all-offers-section-2:hover {
+    background-color: #fff;
+    color: #FA6933;
+    border: 1px solid #FA6933;
+    cursor: pointer;
+}
+
+/* ---- SECTION 3 - CARTE CADEAU - DESKTOP ---- */
 
 #container-gift {
     height: 35vh;
     min-height: 300px;
     width: 60%;
-    margin: 40px 20%;
+    margin: 3% 20%;
     border-radius: 70px 5px 70px 5px;
-    /* position: relative; */
-    /* left:30% */
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     background-color: #fff;
     display: flex;
+}
+
+#container-gift:hover #picture-gift {
+    animation: gifttranslate 0.5s infinite;
 }
 
 #picture-gift {
     margin: auto 10%;
 }
 
+@keyframes gifttranslate {
+    from {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(15px);
+    }
+
+    75% {
+        transform: translate(-15px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
 #gift-description {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+#title-gift {
+    font-size: 1.2rem;
+}
+
+#para-gift {
+    font-size: 1rem;
 }
 
 #btn-offer-card {
@@ -1007,7 +1126,14 @@ cursor: pointer;
     border-radius: 50px;
 }
 
-/* ---- SECTION 3 DESKTOP ---- */
+#btn-offer-card:hover {
+    background-color: #FA6933;
+    color: #fff;
+    border: 1px solid #FA6933;
+    cursor: pointer;
+}
+
+/* ---- SECTION 3 - ACTIVITE AUTOUR DE NOS GITES - DESKTOP ---- */
 
 #section-3 {
     width: 90%;
@@ -1016,6 +1142,7 @@ cursor: pointer;
 
 #section-3>h2 {
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .article-section-3 {
@@ -1031,6 +1158,11 @@ cursor: pointer;
     border-radius: 5px;
 }
 
+.picture-activty:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
 .container-activity-description {
     width: 40vw;
     display: flex;
@@ -1039,20 +1171,24 @@ cursor: pointer;
     align-items: flex-start;
 }
 
+.title-card-activity {
+    font-size: 1.2rem;
+}
+
 .activity-description {
     margin-top: -10px;
-    text-justify: inter-word;
-    line-height: 24px;
+    text-justify: auto;
+    line-height: 1.6rem;
     font-size: 1rem;
 }
 
 .hr-section-3 {
     margin: 50px auto;
     width: 40%;
-    border: 1px solid #000;
+    border: 1px solid #FA6933;
 }
 
-/* ---- SECTION 4 DESKTOP ---- */
+/* ---- SECTION 4 - TEMOIGNAGES - DESKTOP ---- */
 
 #section-4 {
     width: 100%;
@@ -1070,9 +1206,10 @@ cursor: pointer;
     padding-bottom: 60vh;
 }
 
-.title-section-h2-desktop {
+#title-section-h2-desktop {
     text-align: right;
     margin-right: 20vw;
+    font-size: 1.8rem;
 }
 
 #temoignage-1 {
@@ -1105,8 +1242,16 @@ cursor: pointer;
     flex-direction: column;
 }
 
-.temoignage {
+.temoignage-description h5 {
     font-size: 1rem;
+}
+
+.temoignage-description h6 {
+    font-size: 0.8rem;
+}
+
+.temoignage {
+    font-size: 1.2rem;
     font-style: italic;
     line-height: 24px;
     text-justify: inter-word;
@@ -1120,25 +1265,25 @@ cursor: pointer;
     margin-top: 30px;
 }
 
-/* ---- SECTION 5 DESKTOP ---- */
+/* ---- SECTION 5 - CONTACTEZ-NOUS - DESKTOP ---- */
 
 #section-5 {
     width: 99vw;
-    height: 40vh;
+    height: 50vh;
     margin: 35px auto 20px auto;
     position: relative;
 }
 
 #container-formulaire-photo {
-    width: 40%;
-    height: 70vh;
+    width: 50%;
+    height: 80vh;
     display: flex;
     margin: 0 auto;
     border-radius: 0 50px 50px 0;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     position: absolute;
     top: -40vh;
-    left: 30%;
+    left: 25%;
     z-index: 999;
 }
 
@@ -1211,6 +1356,13 @@ textarea {
     margin-bottom: 4vh;
 }
 
+#btn-submit-form:hover {
+    background-color: #fff;
+    color: #FA6933;
+    border: 1px solid #FA6933;
+    cursor: pointer;
+}
+
 /* ---- FOOTER DESKTOP ---- */
 
 #footer {
@@ -1230,6 +1382,11 @@ textarea {
     width: 100%;
 }
 
+#logo-footer>img:hover #logo-text-footer  {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 #logo-footer>img {
     text-align: center;
 }
@@ -1245,6 +1402,7 @@ textarea {
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
 }
+
 
 #store-apple::before {
     content: "";
@@ -1265,6 +1423,7 @@ textarea {
 #store-apple>span:last-of-type,
 #store-google>span:last-of-type {
     font-weight: bold;
+    font-size: 0.8rem;
 }
 
 #store-google {
@@ -1313,7 +1472,13 @@ textarea {
 
 .container-element-footer ul li {
     list-style-type: none;
-    margin: 2vh 0;
+    margin: 3vh 0;
+    font-size: 1rem;
+    opacity: 90%;
+}
+
+.container-element-footer ul:hover li, #social-network:hover img, #terme-footer:hover span, #confidential-footer span, #store-google:hover, #store-apple:hover {
+cursor: pointer;
 }
 
 .container-element-footer>h4 {
