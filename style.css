@@ -60,7 +60,7 @@ body {
     #nav-connexion #picto-global {
         margin: auto 0 auto 0;
         opacity: 60%;
-        
+
     }
 
     #nav-connexion #picto-customer {
@@ -81,7 +81,7 @@ body {
         border-radius: 0px;
         padding: 35% 30px;
         margin: auto auto 40px auto;
-        background-blend-mode:luminosity;
+        background-blend-mode: luminosity;
     }
 
     #hero>#intro-tittle {
@@ -248,7 +248,7 @@ body {
 
     body #section-2 {
         width: 90%;
-        margin: 5vh auto  auto;
+        margin: 5vh auto auto;
         background-color: #FAF9F8;
     }
 
@@ -414,7 +414,7 @@ body {
         font-weight: bold;
     }
 
-    #store-google {
+    #logo-footer #store-google {
         height: 60px;
         width: 50%;
         display: flex;
@@ -425,7 +425,7 @@ body {
         border-bottom: 1px solid #000;
     }
 
-    #store-google::before {
+    #footer #store-google::before {
         content: "";
         background: url(./img/Google\ Play.png);
         background-size: contain;
@@ -433,17 +433,27 @@ body {
         height: 35px;
         width: 35px;
         position: absolute;
-        right: 35%;
+        left: 55%;
     }
 
-    .container-element-footer {
-        height: 70px;
+    #footer #container-categories-element-footer {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #container-categories-element-footer .container-element-footer {
         width: 100%;
         padding-left: 10%;
+        padding-bottom: 0;
         border-bottom: 1px solid #000;
     }
 
-    .container-element-footer>span {
+    .container-element-footer .liste-footer-desktop {
+        display: none;
+    }
+
+    #container-categories-element-footer .container-element-footer>h4 {
         display: block;
         margin: auto 0 auto 0;
         line-height: 70px;
@@ -451,7 +461,7 @@ body {
         font-size: 1rem;
     }
 
-    .container-element-footer>span::after {
+    #container-categories-element-footer .container-element-footer>h4::after {
         content: "+";
         font-size: 25px;
         position: absolute;
@@ -498,6 +508,11 @@ body {
 
     #confidential-footer>span:nth-of-type(3) {
         margin: 0 3% 0 3%;
+    }
+
+    #terme-footer {
+        font-size: 1rem;
+        font-weight: bold;
     }
 
     /* ---- FONT-PICTO-COMMUN ---- */
@@ -1261,34 +1276,47 @@ textarea {
     right: 28%;
 }
 
+#container-categories-element-footer {
+    display: flex;
+    width: 100%;
+    padding: 5vh;
+}
+
 .container-element-footer {
-    height: 70px;
+    /* height: ; */
     width: 100%;
     padding-left: 10%;
+    padding-bottom: 2vh;
     border-bottom: 1px solid #000;
+    overflow: auto;
 }
 
-.container-element-footer>span {
+.container-element-footer>span:first-of-type {
+    margin-bottom: 2vh;
+}
+
+.container-element-footer ul {
+    list-style-type: none;
+}
+
+.container-element-footer ul li {
+    list-style-type: none;
+    margin: 2vh 0;
+}
+
+.container-element-footer>h4 {
     display: block;
-    margin: auto 0 auto 0;
-    line-height: 70px;
+    line-height: 1rem;
     font-weight: bold;
     font-size: 1rem;
-}
-
-.container-element-footer>span::after {
-    content: "+";
-    font-size: 25px;
-    position: absolute;
-    font-weight: lighter;
-    right: 10%;
-    opacity: 50%;
+    text-transform: uppercase;
 }
 
 #social-network {
     width: 100%;
     text-align: center;
     padding: 10px 0 10px 0;
+    margin-bottom: 2vh;
 }
 
 #social-network>img {
@@ -1296,8 +1324,8 @@ textarea {
 }
 
 #social-network>img:nth-of-type(2) {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 #confidential-footer {
@@ -1306,7 +1334,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 3vh;
 }
 
 #confidential-footer>span {
@@ -1323,6 +1351,11 @@ textarea {
 
 #confidential-footer>span:nth-of-type(3) {
     margin: 0 3% 0 3%;
+}
+
+#terme-footer {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 /* ---- FONT-PICTO-COMMUN ---- */
