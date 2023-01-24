@@ -6,8 +6,41 @@
     padding: 0;
 }
 
+/* ---- FONT-FAMILY ---- */
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("/font/Roboto-Medium.ttf")
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("/font/Roboto-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("/font/Roboto-Bold.ttf")
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url("/font/Roboto-Thin.ttf")
+}
+
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url("/font/Roboto-Italic.ttf")
+}
+
+@font-face {
+    font-family: "Roboto-BoldItalic";
+    src: url("/font/Roboto-BoldItalic.ttf")
+}
+
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto-Regular", sans-serif;
     background-color: #FAF9F8;
 }
 
@@ -134,13 +167,14 @@ body {
         width: 90%;
         margin: auto auto 20px auto;
         background-color: #FAF9F8;
-        display: block;
+        flex-direction: column;
     }
 
     #section-0 .article-section-0 {
         display: flex;
         justify-content: center;
         margin: 30px 0 40px 0;
+        width: 100%;
     }
 
     .article-section-0 .picture-square-town {
@@ -360,79 +394,11 @@ body {
 
     /* ---- FOOTER MOBILE ---- */
 
-    #footer {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #fff;
-    }
-
-    #logo-footer {
-        border: 1px solid #000;
-        border-left: none;
-        border-right: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 0 15px 0;
-        width: 100%;
-    }
-
-    #logo-footer>img {
-        text-align: center;
-    }
-
-    #store-apple {
-        height: 60px;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-left: 20px;
-        border-bottom: 1px solid #000;
-        border-right: 1px solid #000;
-    }
-
     #store-apple::before {
-        content: "";
-        background: url(./img/Apple\ Logo.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 35px;
-        width: 35px;
-        position: absolute;
         left: 3%;
     }
 
-    #store-apple>span,
-    #store-google>span {
-        font-size: 0.8rem;
-    }
-
-    #store-apple>span:last-of-type,
-    #store-google>span:last-of-type {
-        font-weight: bold;
-    }
-
-    #logo-footer #store-google {
-        height: 60px;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-left: 20px;
-        border-bottom: 1px solid #000;
-    }
-
     #footer #store-google::before {
-        content: "";
-        background: url(./img/Google\ Play.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 35px;
-        width: 35px;
-        position: absolute;
         left: 55%;
     }
 
@@ -443,10 +409,7 @@ body {
     }
 
     #container-categories-element-footer .container-element-footer {
-        width: 100%;
-        padding-left: 10%;
         padding-bottom: 0;
-        border-bottom: 1px solid #000;
     }
 
     .container-element-footer .liste-footer-desktop {
@@ -454,11 +417,8 @@ body {
     }
 
     #container-categories-element-footer .container-element-footer>h4 {
-        display: block;
         margin: auto 0 auto 0;
         line-height: 70px;
-        font-weight: bold;
-        font-size: 1rem;
     }
 
     #container-categories-element-footer .container-element-footer>h4::after {
@@ -476,43 +436,13 @@ body {
         padding: 10px 0 10px 0;
     }
 
-    #social-network>img {
-        height: 35px;
-    }
-
     #social-network>img:nth-of-type(2) {
         padding-left: 5%;
         padding-right: 5%;
     }
 
     #confidential-footer {
-        width: 100%;
-        overflow: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         margin-bottom: 30px;
-    }
-
-    #confidential-footer>span {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    #confidential-footer>span:first-of-type {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    #confidential-footer>span:nth-of-type(3) {
-        margin: 0 3% 0 3%;
-    }
-
-    #terme-footer {
-        font-size: 1rem;
-        font-weight: bold;
     }
 
     /* ---- FONT-PICTO-COMMUN ---- */
@@ -520,7 +450,6 @@ body {
     .height-picto {
         height: 35px;
     }
-
 
     .title-section-h2 {
         font-weight: bold;
@@ -556,8 +485,14 @@ body {
     display: flex;
 }
 
+#nav-logo:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .logo-text {
-    font-size: 1.4rem;
+    font-family: "roboto-bold";
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -572,6 +507,13 @@ body {
     opacity: 60%;
 }
 
+#picto-global:hover {
+    margin: auto 3% auto 0;
+    opacity: 60%;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 #picto-customer {
     display: none;
 }
@@ -579,10 +521,17 @@ body {
 #btn-connexion {
     width: 123px;
     height: 47px;
-    background-color: #FA6933;
+    background-color: #fab533;
     color: #fff;
-    border: #FA6933;
+    border: #fab533;
     border-radius: 5px;
+}
+
+#btn-connexion:hover {
+    background-color: #FFFFFF;
+    color: #FA6933;
+    border: 1px solid #FA6933;
+    cursor: pointer;
 }
 
 #btn-contact {
@@ -593,6 +542,17 @@ body {
     border: 1px solid #FA6933;
     border-radius: 5px;
     margin-left: 3%;
+}
+
+#btn-contact:hover {
+    width: 123px;
+    height: 47px;
+    background-color: #FA6933;
+    color: #fff;
+    border: 1px solid #FA6933;
+    border-radius: 5px;
+    margin-left: 3%;
+    cursor: pointer;
 }
 
 /* ---- MAIN - HERO - DESKTOP ---- */
@@ -640,6 +600,10 @@ h1 {
     overflow: hidden;
 }
 
+#search-bar-descktop:hover {
+    cursor: pointer;
+}
+
 #search-bar-descktop>div {
     width: 20%;
     height: 70px;
@@ -652,7 +616,7 @@ h1 {
 }
 
 .color-black-search {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -676,17 +640,19 @@ h1,
     background-color: #FAF9F8;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-#section-0 .title-section-h2 {
+#section-0 h2 {
     width: 100%;
+    font-size: 1.4rem;
 }
 
 .article-section-0,
 .section-0-desktop-extension {
     display: flex;
     margin: 30px 0 20px 0;
+    width: 25%;
 }
 
 .picture-square-town {
@@ -695,14 +661,36 @@ h1,
     max-width: 30%;
 }
 
+.article-section-0:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 #right-margin-picture {
-    margin-right: 25px;
+    margin-right: 35px;
 }
 
 .article-section-0-description {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: right;
+}
+
+.title-card-h3 {
+    position: relative;
+    text-align: end;
+}
+
+.title-card-h3::before {
+    content: "";
+    background: url(./img/icons8-géorepérage-50.png);
+    background-size: cover;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: -2px;
+    left: -10px;
 }
 
 .article-section-0-description>h3,
@@ -719,6 +707,11 @@ h1,
     position: relative;
 }
 
+#section-1 h2 {
+    font-size: 1.8rem;
+    margin-left: 1vw;
+}
+
 .container-btn-tag-desktop {
     display: inline-block;
     position: absolute;
@@ -733,8 +726,12 @@ h1,
     margin-right: 10px;
     background-color: transparent;
     color: #FA6933;
-    border: none;
+    border: 1px solid #FA6933;
     font-weight: bold;
+}
+
+.btn-tag-desktop:hover {
+cursor: pointer;
 }
 
 .container-card-section-1 {
@@ -746,7 +743,7 @@ h1,
 
 .article-card-shadow,
 .article-card-shadow-desktop {
-    height: 45vh;
+    height: 48vh;
     min-height: 370px;
     width: 25%;
     margin: 20px 2vw 40px 2vw;
@@ -757,6 +754,11 @@ h1,
     background-color: #fff;
 }
 
+.article-card-shadow:hover {
+    transform: scale(1.05);
+    transition: all 0.8s ease;
+}
+
 .card-heart {
     position: absolute;
     top: 10px;
@@ -764,11 +766,11 @@ h1,
 }
 
 #picture-article-1 {
-    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    background-image: url(./img/chalet-foret-nuit.jpg);
 }
 
 #picture-article-2 {
-    background-image: url(./img/pexels-tansu-topuzoğlu-10206271.jpg);
+    background-image: url(./img/gite\ poton\ lac.jpg);
 }
 
 #picture-article-3 {
@@ -798,9 +800,9 @@ h1,
 
 .title-card {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 20px;
-    margin: 15px 0 10px 0;
+    margin: 5px 0 10px 0;
 }
 
 .card-price {
@@ -813,7 +815,7 @@ h1,
 }
 
 .note-star {
-    margin-right: 15px;
+    margin-bottom: 5px;
 }
 
 .card-text-description {
@@ -961,15 +963,26 @@ h1,
     font-size: 0.8rem;
 }
 
+#btn-all-offers-section-2 {
+    margin: 0 auto;
+    width: 30%;
+    min-width: 230px;
+    height: 39px;
+    background-color: #FA6933;
+    color: #fff;
+    border: none;
+}
+
 /* ---- SECTION 3 - CARTE CADEAU DESKTOP ---- */
 
 #container-gift {
-    height: 30vh;
+    height: 35vh;
     min-height: 300px;
     width: 60%;
-    margin: 40px auto;
+    margin: 40px 20%;
     border-radius: 70px 5px 70px 5px;
-    position: relative;
+    /* position: relative; */
+    /* left:30% */
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     background-color: #fff;
     display: flex;
@@ -1283,7 +1296,6 @@ textarea {
 }
 
 .container-element-footer {
-    /* height: ; */
     width: 100%;
     padding-left: 10%;
     padding-bottom: 2vh;
