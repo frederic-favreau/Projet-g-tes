@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <!------------- HEADER - NAV BAR TOP -------------->
 
     <header id="header">
@@ -30,7 +29,17 @@
                     </ul>
                 </li>
                 </ul>
-                <img id="picto-global" src="./img/GlobalOutlined.svg" alt="Choix de langue" height="30px">
+                <div id="picto-language">
+                    <ul>
+                        <li id="picto-country"><a href="#"><img id="picto-global" src="./img/la-france.png" alt="Choix de langue" height="30px"></a>
+                            <ul id="sub-menu-language">
+                                <li><a href=""><img src="./img/royaume-uni.png" alt="drapeau Royaume-unis" height="30px"></a></li>
+                                <li><a href="#"><img src="./img/italie.png" alt="drapeau Italie" height="30px"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <img id="picto-global" src="./img/la-france.png" alt="Choix de langue" height="30px"> -->
                 <img id="picto-customer" src="./img/Customer.svg" alt="Profil utilisateur">
                 <button id="btn-connexion" type="button">Connexion</button>
                 <button id="btn-contact" type="button">Contact</button>
@@ -62,7 +71,7 @@
                     <span class="color-gray-search">Ajouter</span>
                 </div>
                 <div id="picto-search">
-                    <img src="./img/SearchOutlined.svg" alt="rechercher" height="45px">
+                    <img src="./img/SearchOutlined.svg" alt="rechercher" height="30px">
                 </div>
             </div>
             <div id="search-bar-mobile">
@@ -77,6 +86,7 @@
 
     <section id="section-0">
         <h2 class="title-section-h2">Explorer à proximité</h2>
+        <div id="container-section-0">
         <div class="article-section-0">
             <img src="./img/gien.jpg" alt="ville de Gien" class="picture-square-town" id="right-margin-picture">
             <div class="article-section-0-description">
@@ -103,7 +113,7 @@
             <img src="./img/blois ville.jpg" alt="ville de Gien" class="picture-square-town" id="right-margin-picture">
             <div class="article-section-0-description">
                 <h3 class="title-card-h3">Blois</h3>
-                <h4>2 heure de route</h4>
+                <h4>2 heures de route</h4>
             </div>
         </div>
         <div class="article-section-0 section-0-desktop-extension">
@@ -132,20 +142,21 @@
             <img src="./img/dreux-ville.jpg" alt="ville de Gien" class="picture-square-town" id="right-margin-picture">
             <div class="article-section-0-description">
                 <h3 class="title-card-h3">Dreux</h3>
-                <h4>2 heure de route</h4>
+                <h4>2 heures de route</h4>
             </div>
         </div>
+    </div>
     </section>
 
     <!------------- SECTION 1 - COUP DE COEUR -------------->
 
     <section id="section-1">
         <h2 class="title-section-h2">Coup de coeur du moment</h2>
-        <div class="container-btn-tag-desktop">
+        <!-- <div class="container-btn-tag-desktop">
             <button type="button" class="btn-tag-desktop">Forêt</button>
             <button type="button" class="btn-tag-desktop">Point d'eau</button>
             <button type="button" class="btn-tag-desktop">Ferme</button>
-        </div>
+        </div> -->
         <hr class="hr-section-h2">
         <div class="container-card-section-1">
             <div class="article-card-shadow">
@@ -358,7 +369,7 @@
     <section id="section-3">
         <h2 class="title-section-h2">Activités autour de nos Gîtes</h2>
         <div class="article-section-3">
-            <img src="./img/ims-najia.png" alt="ville de Gien" class="picture-activty">
+            <img src="./img/ims-najia.png" alt="ville de Gien" class="picture-activity">
             <div class="container-activity-description">
                 <h3 class="title-card-activity">Institut de beauté</h3>
                 <p class="activity-description">Najia et Elisa vous accueillent dans une ambiance chaleureuse pour
@@ -369,7 +380,7 @@
         </div>
         <hr class="hr-section-3">
         <div class="article-section-3">
-            <img src="./img/LOGO-elisa.png" alt="ville de Gien" class="picture-activty">
+            <img src="./img/LOGO-elisa.png" alt="ville de Gien" class="picture-activity">
             <div class="container-activity-description">
                 <h3 class="title-card-activity">Salon de tatouage</h3>
                 <p class="activity-description">C'est dans la bonne humeur et la convivialité que je vous accueil.
@@ -381,7 +392,7 @@
         </div>
         <hr class="hr-section-3">
         <div class="article-section-3">
-            <img src="./img/logo-online.svg" alt="ville de Gien" class="picture-activty">
+            <img src="./img/logo-online.svg" alt="ville de Gien" class="picture-activity">
             <div class="container-activity-description">
                 <h3 class="title-card-activity">ONLINEFORMAPRO</h3>
                 <p class="activity-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
@@ -455,8 +466,7 @@
 
     <footer id="footer">
         <div id="logo-footer">
-            <img src="./img/Giîte d'Orléans-logo.svg" alt="logo Gitonline" height="45px">
-            <span id="logo-text-footer" class="logo-text">Gitonline</span>
+            <a href="#header"><img src="./img/Giîte d'Orléans-logo.svg" alt="logo Gitonline" height="45px"><span id="logo-text-footer" class="logo-text">Gitonline</span></a>
         </div>
         <div id="store-apple">
             <span>Disponible sur</span>
