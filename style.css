@@ -15,7 +15,6 @@
     position: absolute;
 }
 
-
 /* ---- FONT-FAMILY ---- */
 
 @font-face {
@@ -47,7 +46,6 @@
     font-family: "Roboto-BoldItalic";
     src: url("/font/Roboto-BoldItalic.ttf")
 }
-
 
 body {
     font-family: "Roboto-Regular", sans-serif;
@@ -85,7 +83,6 @@ body {
     }
 }
 
-
 @media screen and (max-width: 600px) {
 
     /* HEADER MOBILE - NAV BAR */
@@ -99,6 +96,7 @@ body {
 
     #header #nav-top {
         height: 10vh;
+        min-height: 64px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -385,8 +383,6 @@ body {
         margin-top: 20px;
     }
 
-
-
     /* ---- FOOTER MOBILE ---- */
 
     #store-apple::before {
@@ -405,6 +401,7 @@ body {
 
     #container-categories-element-footer .container-element-footer {
         padding-bottom: 0;
+        min-height: inherit;
     }
 
     .container-element-footer .liste-footer-desktop {
@@ -559,11 +556,12 @@ body {
         display: block;
         text-align: center;
         background-color: #FBE3DA;
-        padding-top: 2vh;
+        padding-top: 2%;
     }
 
     #section-4 .container-temoignages {
-        height: 70vh;
+        /* height: 70vh; */
+        max-height: 620px;
         padding: 20px;
     }
 
@@ -583,7 +581,7 @@ body {
     }
 
     .container-temoignages #temoignage-2 {
-        margin: 1vh 0;
+        margin: 60px 0;
     }
 
     #temoignage-1 .picto-temoignage-desktop,
@@ -593,6 +591,12 @@ body {
 
     .temoignage-description .temoignage {
         font-size: 1rem;
+    }
+
+    /* SECTION 5 - CONTACTEZ-NOUS - TABLET */
+
+    body #section-5 {
+        min-height: 690px;
     }
 
 }
@@ -659,7 +663,7 @@ body {
 }
 
 #deroulant-explorer {
-    padding: 13px 25px;
+    padding: 16px 25px;
     display: block;
     text-decoration: none;
     position: relative;
@@ -807,6 +811,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 80vh;
+    min-height: 650px;
     width: 80vw;
     margin: auto auto 10vh auto;
     color: rgb(255, 255, 255);
@@ -840,6 +845,7 @@ h1 {
     display: flex;
     width: 75%;
     height: 10%;
+    min-height: 70px;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -887,7 +893,6 @@ h1,
     max-width: 1600px;
     margin: 0 auto 10vh auto;
     background-color: #FAF9F8;
-
 }
 
 #container-section-0 {
@@ -905,11 +910,13 @@ h1,
     display: flex;
     margin: 30px 2% 20px 3%;
     width: 20%;
+    min-height: 82px;
 }
 
 .picture-square-town {
     border-radius: 5px;
     height: 10vh;
+    min-height: 82px;
     width: 40%;
     object-fit: cover;
 }
@@ -1120,7 +1127,8 @@ h1,
     background-position: center;
     background-size: cover;
     height: 45vh;
-    width: 99vw;
+    min-height: 320px;
+    width: 100%;
     opacity: 100%;
     background-blend-mode: darken;
     display: flex;
@@ -1164,7 +1172,6 @@ h1,
 /* ---- SECTION 2 - OFFRE DE DERNIERES MINUTES - DESKTOP ---- */
 
 #section-2 {
-    width: 99vw;
     background-color: #FBE3DA;
     padding: 8vh 0 3vh 0;
 }
@@ -1400,16 +1407,26 @@ h1,
 .article-section-3 {
     width: 100%;
     height: 40%;
+    min-height: 60px;
     margin: 30px 0 20px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .article-section-3>.picture-activity {
-    height: 18vh;
+    height: 100%;
+    min-height: 160px;
     width: 20%;
     border-radius: 5px;
-    object-fit: contain;
+    background-size: cover;
+}
+
+#najia {
+    background-image: url("./img/ims-najia.png");
+}
+
+#elisa {
+    background-image: url("./img/LOGO-elisa.png");
 }
 
 .picture-activity:hover {
@@ -1418,7 +1435,7 @@ h1,
 
 .container-activity-description {
     width: 70%;
-    height: 155px;
+    /* height: 155px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1447,6 +1464,7 @@ h1,
 
 #section-4 {
     width: 100%;
+    /* min-height: 620px; */
     margin: 50px auto 20px auto;
 }
 
@@ -1456,7 +1474,7 @@ h1,
 
 .container-temoignages {
     background-color: #FBE3DA;
-    height: 90vh;
+    height: 90%;
     padding: 10vh 0;
     padding-bottom: 60vh;
 }
@@ -1490,6 +1508,8 @@ h1,
 .picto-temoignage-desktop {
     margin-right: 3vw;
     height: 10vh;
+    min-height: 75px;
+
 }
 
 .temoignage-description {
@@ -1523,8 +1543,8 @@ h1,
 /* ---- SECTION 5 - CONTACTEZ-NOUS - DESKTOP ---- */
 
 #section-5 {
-    width: 99vw;
     height: 50vh;
+    min-height: 650px;
     margin: 35px auto 20px auto;
     position: relative;
 }
@@ -1532,6 +1552,7 @@ h1,
 #container-formulaire-photo {
     width: 50%;
     height: 80vh;
+    min-height: 652px;
     display: flex;
     margin: 0 auto;
     border-radius: 0 50px 50px 0;
@@ -1544,6 +1565,7 @@ h1,
 
 .container-formulaire {
     width: 50%;
+    min-height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1599,6 +1621,7 @@ textarea {
     border: none;
     background: transparent;
     width: 100%;
+    resize: none;
 }
 
 #btn-submit-form {
@@ -1624,6 +1647,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     background-color: #FBE3DA;
+    min-height: 560px;
 }
 
 #logo-footer {
@@ -1704,19 +1728,20 @@ textarea {
 #container-categories-element-footer {
     display: flex;
     width: 100%;
-    padding: 5vh;
+    padding: 3%;
 }
 
 .container-element-footer {
     width: 100%;
+    min-height: 220px;
     padding-left: 10%;
-    padding-bottom: 2vh;
+    padding-bottom: 2%;
     border-bottom: 1px solid #000;
     overflow: auto;
 }
 
 .container-element-footer>span:first-of-type {
-    margin-bottom: 2vh;
+    margin-bottom: 2%;
 }
 
 .container-element-footer ul {
@@ -1725,7 +1750,7 @@ textarea {
 
 .container-element-footer ul li {
     list-style-type: none;
-    margin: 3vh 0;
+    margin: 35px 0;
     font-size: 1rem;
     opacity: 90%;
 }
