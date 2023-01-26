@@ -1,4 +1,4 @@
-# Projet-g-tes
+# Projet-gites
 Premier projet de site web à Onlineformapro
 
 Lien du figma :
